@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corpo Definido em 30 Dias</title>
+    <link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/mobile.css" media="(max-width:	939px)">
+    <style>
+        /* Adicione aqui o CSS conforme necessário para o estilo dos botões */
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="menuinicial.html">
+        <img src="img/logo.png" alt="Logo">
+    </a>
+    <h1>Corpo Definido em 30 Dias!</h1>
+</header>
+
+<!-- Calendário -->
+<div class="calendar">
+    <div class="week-day">Seg</div>
+    <div class="week-day">Ter</div>
+    <div class="week-day">Qua</div>
+    <div class="week-day">Qui</div>
+    <div class="week-day">Sex</div>
+    <div class="week-day">Sáb</div>
+    <div class="week-day">Dom</div>
+
+    <!-- Dias do mês -->
+    <div class="day">1</div>
+    <div class="day">2</div>
+    <div class="day">3</div>
+    <div class="day">4</div>
+    <div class="day">5</div>
+    <div class="day">6</div>
+    <div class="day">7</div>
+    <div class="day">8</div>
+    <div class="day">9</div>
+    <div class="day">10</div>
+    <div class="day">11</div>
+    <div class="day">12</div>
+    <div class="day">13</div>
+    <div class="day">14</div>
+    <div class="day">15</div>
+    <div class="day">16</div>
+    <div class="day">17</div>
+    <div class="day">18</div>
+    <div class="day">19</div>
+    <div class="day">20</div>
+    <div class="day">21</div>
+    <div class="day">22</div>
+    <div class="day">23</div>
+    <div class="day">24</div>
+    <div class="day">25</div>
+    <div class="day">26</div>
+    <div class="day">27</div>
+    <div class="day">28</div>
+    <div class="day">29</div>
+    <div class="day">30</div>
+</div>
+
+<!-- Área para marcar os dias que o usuário treinou -->
+<div class="train-mark">
+    <h3>Marque os dias que você treinou:</h3>
+    <p>Para marcar os dias em que você treinou, clique nas células do calendário.</p>
+</div>
+
+<!-- Botões para as planilhas de treino -->
+<div class="training-buttons">
+    <h3>Escolha a Planilha de Treino</h3>
+    <div class="button-container">
+        <button onclick="window.location.href='treinospeito.html'">Peito</button>
+        <button onclick="window.location.href='treinosbraco.html'">Braço</button>
+        <button onclick="window.location.href='treinoscosta.html'">Costas</button>
+        <button onclick="window.location.href='treinosombro.html'">Ombro</button>
+        <button onclick="window.location.href='treinosperna.html'">Perna</button>
+    </div>
+</div>
+
+<script>
+    // Seleciona todos os dias no calendário
+    const days = document.querySelectorAll('.calendar .day');
+
+    // Função para alternar a classe 'selected' nos dias
+    days.forEach(day => {
+        day.addEventListener('click', () => {
+            day.classList.toggle('selected');
+        });
+    });
+</script>
+
+<p> <iframe width="622" height="315" src="https://www.youtube.com/embed/Vz_h8gH1Umc?si=sdxyC0vhUeZ4xQsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="622" height="315" src="https://www.youtube.com/embed/mvnRl0ku1Gs?si=To5hep4I-LThatIG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="622" height="315" src="https://www.youtube.com/embed/0GFvH8aFEi8?si=icwPGO9LdYeF1vTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </p>
+
+<footer>
+    <div class="footer-content">
+        <p>Siga-nos no Instagram:</p>
+        <a href="https://instagram.com/miguel.yz__" target="_blank">@miguel.yz__</a>
+        <a href="https://instagram.com/davidson_guima" target="_blank">@davidson_guima</a>
+    </div>
+</footer>
+
+
+</body>
+</html>

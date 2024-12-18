@@ -1,0 +1,109 @@
+/* Configuração geral para todos os tamanhos */
+.container {
+    width: 96%;
+    margin: 0 auto; /* Centraliza o conteúdo */
+    max-width: 1200px; /* Limita a largura em telas maiores */
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha em telas pequenas */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+header img {
+    max-width: 100px;
+    height: auto; /* Garante proporção da imagem */
+    margin: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Painel de treino */
+.painel {
+    display: flex;
+    flex-wrap: wrap; /* Ajusta os elementos para caber em telas menores */
+    gap: 10px;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.painel li {
+    list-style: none;
+    width: 100%; /* Padrão para dispositivos móveis */
+    text-align: center;
+}
+
+.painel img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Destaques e outros elementos */
+.destaque img {
+    width: 100%; /* Ajuste padrão */
+    height: auto;
+}
+
+/* Responsividade para diferentes tamanhos */
+
+/* Telas menores que 480px */
+@media (max-width: 479px) {
+    header img {
+        display: none; /* Esconde a imagem no header */
+    }
+}
+
+/* Telas a partir de 480px */
+@media (min-width: 480px) {
+    header h1 {
+        font-size: 20px; /* Tamanho do texto aumenta */
+    }
+
+    header img {
+        max-width: 70px;
+    }
+
+    .painel li {
+        width: 48%; /* Dois elementos por linha */
+    }
+}
+
+/* Telas a partir de 720px */
+@media (min-width: 720px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    header img {
+        max-width: 100px;
+    }
+
+    .painel li {
+        width: 30%; /* Três elementos por linha */
+    }
+
+    .destaque img {
+        width: 69%;
+    }
+}
+
+/* Telas a partir de 1024px */
+@media (min-width: 1024px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    .painel li {
+        width: 22%; /* Quatro elementos por linha */
+    }
+}

@@ -1,0 +1,189 @@
+/* Estilização do cabeçalho */
+header {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    padding: 10px 20px;
+    position: relative; /* Necessário para posicionamento da logo */
+    height: 100px; /* Altura fixa do cabeçalho */
+}
+
+header img {
+    height: 80px; /* Tamanho da logo */
+    position: absolute; /* Permite posicionamento manual */
+    left: 20px; /* Alinhado ao canto esquerdo */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajuste para alinhar o centro da imagem */
+    cursor: pointer; /* Indica que a imagem é clicável */
+}
+
+header img:hover {
+    opacity: 0.8; /* Leve transparência ao passar o mouse */
+}
+
+header img:active {
+    transform: translateY(-50%) scale(0.95); /* Efeito de clique */
+}
+
+header h1 {
+    font-family: 'Arial', sans-serif; /* Fonte simples e estilosa */
+    font-size: 32px; /* Tamanho do texto */
+    text-align: center; /* Garante alinhamento central */
+    margin: 0; /* Remove margens padrão */
+	color: #FCFCFC;
+}
+
+/* Estilização do calendário */
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 colunas para os dias da semana */
+    gap: 5px;
+    margin: 20px 0;
+    padding: 10px;
+    text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calendar div {
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+.calendar div.selected {
+    background-color: #4CAF50; /* Cor verde quando o dia é selecionado */
+    color: white;
+}
+
+.calendar div:hover {
+    background-color: #ddd; /* Fundo cinza claro ao passar o mouse */
+}
+
+/* Estilização para os dias da semana */
+.calendar .week-day {
+    font-weight: bold;
+    background-color: #f1f1f1;
+    color: #333;
+    cursor: default; /* Desabilita a interação (não clicáveis) */
+}
+
+/* Estilização dos dias do mês (que são clicáveis) */
+.calendar .day {
+    cursor: pointer; /* Mantém a interatividade somente para os dias do mês */
+}
+
+/* Estilização da área de marcação dos treinos */
+.train-mark {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.train-mark p {
+    font-size: 16px;
+}
+.training-buttons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaçamento entre os botões */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Cor verde para os botões */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Tom de verde mais escuro ao passar o mouse */
+}
+
+button:focus {
+    outline: none; /* Remove o contorno padrão ao focar */
+}
+
+/* Centraliza o h1 principal */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Centraliza o h2 horizontalmente */
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 22px;
+    font-family: Arial, sans-serif;
+    color: #555;
+	border-top: 1px	outset #D7D7D7;
+	padding-top: 10px;
+}
+
+/* Organiza a imagem e a lista lado a lado */
+img {
+    display: block;
+    margin: 0 auto 20px auto; /* Centraliza no bloco */
+    max-width: 300px; /* Garante tamanho máximo */
+}
+
+ul {
+    margin: 0 auto; /* Centraliza em relação à imagem */
+    text-align: left;
+    max-width: 300px; /* Limita o tamanho */
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #444;
+}
+
+p {
+	align-items: center;
+	justify-content: center; /* Centraliza o texto horizontalmente */
+	position: relative;
+}
+
+/* Estilização do rodapé */
+footer {
+    background-color: #ff0000; /* Fundo vermelho */
+    color: white; /* Texto branco */
+    padding: 20px 0px;
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    gap: 4px; /* Espaçamento entre os itens */
+}
+
+footer a {
+    color: white; /* Links em branco */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 20px; /* Tamanho do texto */
+    font-weight: bold; /* Deixa os links em negrito */
+    transition: color 0.3s ease; /* Efeito de transição ao passar o mouse */
+}
+
+footer a:hover {
+    color: #ffe6e6; /* Cor mais clara ao passar o mouse */
+}
